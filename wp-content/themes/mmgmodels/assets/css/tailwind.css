@@ -1,0 +1,332 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Sackers Gothic Std';
+  src: url('/assets/fonts/Sackers_Gothic_Font/sackersgothicstd-light.otf') format('opentype');
+  font-weight: 300; /* Light */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sackers Gothic Std';
+  src: url('/assets/fonts/Sackers_Gothic_Font/sackersgothicstd-medium.otf') format('opentype');
+  font-weight: 400; /* Pale */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sackers Gothic Std';
+  src: url('/assets/fonts/Sackers_Gothic_Font/sackersgothicstd-heavy.otf') format('opentype');
+  font-weight: 700; /* Heavy */
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* ---------------------------------------- 
+ *
+ * Utility classes
+ *
+ ---------------------------------------- */
+.bg-white{
+    background-color: #FFFFFF;
+}
+.bold{
+    font-weight: bold;
+}
+.flex {
+    display: flex;
+}
+.flex-1 {
+    flex: 1 1 0%;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.gap-4{
+    gap: 4rem;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.leading-normal {
+    line-height: 1.5;
+}
+.no-bullets {
+    list-style-type: none;
+    padding: 0;
+}
+.mb-2 {
+    margin-bottom: 2rem;
+}
+.min-w-200 {
+    min-width: 200px;
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.py-1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.py-6 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+.px-1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.text-center {
+    text-align: center;
+}
+.text-white{
+    color: #FFFFFF;
+}
+.text-sm {
+    font-size: 14px;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.w-full {
+    width: 100%;
+}
+/* ---------------------------------------- 
+ *
+ * Utility classes
+ *
+ ---------------------------------------- */
+
+
+
+/* ---------------------------------------- 
+ *
+ * General styles
+ *
+---------------------------------------- */
+.bg-main{
+    background-color: #1A1A1A;
+}
+.bg-black{  
+    background-color: #0D0D0D;
+}
+.color-main{
+    color: #e0006c;
+}
+.text-main{
+    color: #999999;
+}
+
+.main-font {
+    font-family: "Sackers Gothic Std", sans-serif;
+}
+.secondary-font {
+    font-family: "Austin Cyr", "Helvetica", sans-serif;
+}
+/* ---------------------------------------- 
+ *
+ * General styles
+ *
+---------------------------------------- */
+
+
+
+blockquote {
+    position: relative;
+    font-size: 20px;
+    font-weight: 300;
+    border-left: 5px solid #e0006c;
+    line-height: 1.5;
+    font-style: italic;
+    margin: 0 0 24px 0;
+    padding: 15px 0 15px 40px;
+}
+
+
+
+/* ---------------------------------------- 
+ *
+ * Single Model Page styles
+ *  
+---------------------------------------- */
+.single-model .model-name{
+    font-size: 50px;
+}
+.single-model .model-parameters {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background: linear-gradient(to right, rgba(253, 97, 227, 1) 0%, rgba(255, 79, 215, 0.9) 50%, rgba(255, 119, 184, 0.8) 100%);
+}
+.single-model .model-parameters li {
+    display: flex;
+    flex-direction: column;
+}
+.single-model .models-social-icons,
+.single-model .model-parameters,
+.single-model .model-contact-info {
+    padding: 2rem 4rem;
+}
+.single-model .models-social-icons .social-icons a {
+    text-decoration: none;
+}
+.single-model .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.single-model .model-contact-info p {
+    margin: 0;
+}
+.single-model .model-contact-info hr {
+    margin: 1rem 0;
+    border: 1px solid rgba(255, 255, 255, .2)
+}
+.single-model .model-contact-info a {
+    color: #999999;
+    text-decoration: none;
+}
+.single-model .color-bg-icon.fa-facebook-f,
+.single-model .color-bg-icon.fa-youtube,
+.single-model .color-bg-icon.fa-twitter,
+.single-model .color-bg-icon.fa-tiktok,
+.single-model .color-bg-icon.fa-linkedin,
+.single-model .color-bg-icon.fa-pinterest,
+.single-model .color-bg-icon.fa-instagram{
+    padding : 10px 15px;
+    color: #fff;
+}
+.single-model .color-bg-icon.fa-facebook-f{
+    background-color: #3b5998;
+}
+.single-model .color-bg-icon.fa-twitter{
+    background-color: #55acee;
+}
+.single-model .color-bg-icon.fa-youtube{
+    background-color: #e52d27;
+}
+.single-model .color-bg-icon.fa-tiktok{
+    background-color: #1A1A1A;
+}
+.single-model .color-bg-icon.fa-linkedin{
+    background-color: #0976b4;
+}
+.single-model .color-bg-icon.fa-pinterest{
+    background-color: #cc2127;
+}
+.single-model .color-bg-icon.fa-instagram{
+    background-color: #e4405f;
+}
+.single-model .wp-block-table td {
+    border: none;
+}
+.single-model input#wpforms-96-field_1,
+.single-model input#wpforms-96-field_2,
+.single-model textarea#wpforms-96-field_3{
+    border: 1px solid rgba(255, 255, 255, .2);
+    background: none;
+    color: #fff;
+}
+.single-model .wpforms-field-label {
+    color: #fff !important;
+}
+.single-model button#wpforms-submit-96 {
+    background-color: #e0006c;
+    font-weight: bold;
+}
+.single-model .model-featured-image img {
+    width: 100%;
+    height: auto;
+}
+/* ---------------------------------------- 
+ *
+ * Single Model Page styles
+ *  
+---------------------------------------- */
+
+
+
+/* ---------------------------------------- 
+ *
+ * Footer styles
+ *
+----------------------------------------  */
+footer {
+    background-color: #1A1A1A;
+}
+footer h2 {
+    font-size: 30px;
+    margin: 0;
+}
+footer nav ul {
+    list-style: none;
+    padding: 0;
+}
+footer nav li a {
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    color: #e0006c;
+}
+footer nav li a:hover {
+    color: #fff;
+}
+footer .custom-logo-link img {
+    width: 100%;
+}
+/* ---------------------------------------- 
+ *
+ * Footer styles
+ *
+----------------------------------------  */
+
+
+
+/* ---------------------------------------- 
+ *
+ * Media Queries
+ *
+----------------------------------------  */
+/* @media (min-width: 576px) {
+    .container {
+        max-width: 720px;
+    }
+} */
+@media (min-width: 768px) {
+    .container {
+        max-width: 840px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 1000px;
+    }
+}
+@media (min-width: 1300px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container.flex {
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+}
+@media (max-width: 480px) {
+    .single-model .models-social-icons, .single-model .model-parameters, .single-model .model-contact-info {
+        padding: 2rem;
+    }
+}
+/* ---------------------------------------- 
+ *
+ * Media Queries
+ *
+----------------------------------------  */
