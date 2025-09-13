@@ -18,8 +18,16 @@
 	<div class="wrapper">
 		<div class="models_con">
 
-			<div class="models_info wow fadeInUp" data-wow-duration="1.5s">
-				<h2 class="headingStyle1">Top Models <small class="subHead1">High Rated Girls </small></h2>
+			<div class="models_info wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="500ms">
+				<h2 class="headingStyle1"><small class="subHead1">High Rated Girls </small> Top Models </h2>
+			</div>
+
+			<div class="model_categories">
+				<button class="btnStyle1 active">All</button>
+				<button class="btnStyle1">Fasion</button>
+				<button class="btnStyle1">Session</button>
+				<button class="btnStyle1">Studio</button>
+				<button class="btnStyle1">Top Model</button>
 			</div>
 
 			<div class="models_carousel owl-carousel">
@@ -45,12 +53,20 @@
 								<span>92</span>
 							</li>
 							<li>
-								<strong>Shoe</strong>
+								<strong>Shoes</strong>
 								<span>37</span>
 							</li>
 							<li>
 								<strong>Eyes</strong>
 								<span>Blue</span>
+							</li>
+							<li>
+								<strong>Hair</strong>
+								<span>Brown</span>
+							</li>
+							<li>
+								<strong>Size</strong>
+								<span>8</span>
 							</li>
 						</ul>
 					</div>
@@ -78,12 +94,20 @@
 								<span>92</span>
 							</li>
 							<li>
-								<strong>Shoe</strong>
+								<strong>Shoes</strong>
 								<span>37</span>
 							</li>
 							<li>
 								<strong>Eyes</strong>
 								<span>Blue</span>
+							</li>
+							<li>
+								<strong>Hair</strong>
+								<span>Brown</span>
+							</li>
+							<li>
+								<strong>Size</strong>
+								<span>8</span>
 							</li>
 						</ul>
 					</div>
@@ -111,12 +135,20 @@
 								<span>92</span>
 							</li>
 							<li>
-								<strong>Shoe</strong>
+								<strong>Shoes</strong>
 								<span>37</span>
 							</li>
 							<li>
 								<strong>Eyes</strong>
 								<span>Blue</span>
+							</li>
+							<li>
+								<strong>Hair</strong>
+								<span>Brown</span>
+							</li>
+							<li>
+								<strong>Size</strong>
+								<span>8</span>
 							</li>
 						</ul>
 					</div>
@@ -144,12 +176,20 @@
 								<span>92</span>
 							</li>
 							<li>
-								<strong>Shoe</strong>
+								<strong>Shoes</strong>
 								<span>37</span>
 							</li>
 							<li>
 								<strong>Eyes</strong>
 								<span>Blue</span>
+							</li>
+							<li>
+								<strong>Hair</strong>
+								<span>Brown</span>
+							</li>
+							<li>
+								<strong>Size</strong>
+								<span>8</span>
 							</li>
 						</ul>
 					</div>
@@ -177,12 +217,20 @@
 								<span>92</span>
 							</li>
 							<li>
-								<strong>Shoe</strong>
+								<strong>Shoes</strong>
 								<span>37</span>
 							</li>
 							<li>
 								<strong>Eyes</strong>
 								<span>Blue</span>
+							</li>
+							<li>
+								<strong>Hair</strong>
+								<span>Brown</span>
+							</li>
+							<li>
+								<strong>Size</strong>
+								<span>8</span>
 							</li>
 						</ul>
 					</div>
@@ -199,7 +247,7 @@
 		<div class="main_con">
 
 			<main class="home_main">
-				<h1 class="headingStyle1 wow fadeInRight" data-wow-duration="1.5s">Dummy Heading <small class="subHead1">This is a dummy text</small></h1>
+				<h1 class="headingStyle1 wow fadeInRight" data-wow-duration="1.5s"><small class="subHead1">Welcome to </small>MMG Models </h1>
 				<p class="wow fadeInRight" data-wow-duration="1.5s" data-wow-delay=".5s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque vero eveniet, facilis libero eius maiores nesciunt ipsam iure harum aliquam perspiciatis ullam provident corrupti debitis non pariatur recusandae! Beatae, porro.</p>
 				<a href="/about-us" class="btnStyle1 wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="1.2s">About Us</a>
 			</main>
@@ -208,8 +256,22 @@
 	</div>
 </section>
 
-<div class="g_map">
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.771887943749!2d55.270700975959556!3d25.177179132510233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f683509d47ed1%3A0xe12f8b0fa343d29c!2sOxford%20Tower!5e0!3m2!1sen!2sph!4v1757344733074!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
+<section id="book_cta" class="section_con">
+	<div class="wrapper">
+		<div class="book_cta_con">
+
+			<div class="book_cta_info wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="500ms">
+				<h2 class="headingStyle1"><small class="subHead1">International Modelling Agency</small>Book a Model for Your Event </h2>
+				<div class="book_cta_btn">
+					<a href="/models" class="btnStyle1">View Models</a>
+					<a href="/contact" class="btnStyle1">Book Now</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
 
 <?php get_footer(); ?>

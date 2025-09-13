@@ -15,6 +15,15 @@ $(document).ready(function(){
             }
         }
 
+		if ($('#book_cta').length >= 1) {
+            var fixbtmbg = $('#book_cta').offset().top;
+            if (windowScroll > fixbtmbg && window_width > 1024){
+                $('#book_cta').addClass('fixbg');
+            } else {
+                $('#book_cta').removeClass('fixbg');
+            }
+        }
+
 	});
 
 	// Burger Menu
@@ -36,6 +45,8 @@ $(document).ready(function(){
 		nav: true,
 		dots: true,
 		responsiveRefreshRate: 0,
+		autoplay: true,
+		autoplayHoverPause: true,
 		responsive: {
 		  0: {
 			items: 1,
@@ -76,6 +87,8 @@ $(document).ready(function(){
 	});
 
 	new WOW().init();
+
+	
 
 
 });

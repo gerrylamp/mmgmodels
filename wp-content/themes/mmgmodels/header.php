@@ -37,7 +37,7 @@
 
 				<nav class="main_nav">
 					<button class="close_btn">&times;</button>
-					<?php wp_nav_menu( array( 'container_class' => 'nav-menu', 'theme_location' => 'primary', 'after' => '<span><i class="fa fa-2x">&nbsp;&nbsp;&nbsp;&nbsp;</i></span>') ); ?>
+					<?php wp_nav_menu( array('theme_location' => 'primary' ) ); ?>
 				</nav>
 
 				<div class="social_icons">
