@@ -16,6 +16,10 @@
             <main>
 
                 <?php the_content(); ?>
+                
+                <?php if($post->post_content==""): ?>
+                    <p>We are still updating our website with contents. Please check back next time.</p>
+                <?php endif; ?>
 
             </main>
 
