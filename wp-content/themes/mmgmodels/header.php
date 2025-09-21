@@ -17,8 +17,17 @@
     <?php endif; ?>
 
     <?php wp_head(); ?>
+
+	<style>
+		header #menu-header li span {
+			display: none;
+		}
+		.innerpage #header {
+			position: static !important;
+		}
+	</style>
 </head>
-<body>
+<body class="<?php echo is_front_page() ? 'home' : 'innerpage'; ?>">
 
 	<header id="header" class="section_con">
 		<div class="wrapper">

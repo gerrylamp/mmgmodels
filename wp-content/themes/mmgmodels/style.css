@@ -76,8 +76,8 @@ video, iframe{display: block;}
 .wrapper{ width:100%; max-width: 1400px; margin: 0 auto; position: relative;}
 
 /* Header Area */
-#header{position: absolute; inset: 0 0 auto; z-index: 100;}
-#header.fixheader{position: fixed; background: var(--darkColor); animation: slideInDown .8s;}
+#header{position: absolute !important; inset: 0 0 auto; z-index: 100;}
+#header.fixheader{position: fixed !important; background: var(--darkColor); animation: slideInDown .8s;}
 .header_con{ padding: 40px 30px; display: flex; justify-content: space-between; align-items: center;}
 
 .main_logo{position: relative; filter: brightness(0) invert(1); max-width: 230px;}
@@ -168,7 +168,7 @@ body.no-scroll { overflow: hidden; }
 .models_carousel .owl-dot { width: 10px; aspect-ratio: 1/1; border-radius: 50%; border: none; margin: 0 5px; }
 
 /* Main Area */
-#main_area{background: url(images/main-bg.jpg) no-repeat left top; position: relative; isolation: isolate;}
+#main_area, #about-us .banner{background: url(images/main-bg.jpg) no-repeat left top; position: relative; isolation: isolate;}
 .main_con{padding: 100px 0;}
 .home_main{width: 50%; max-width: 700px; margin: 0 0 0 auto;}
 .home_main h2{}

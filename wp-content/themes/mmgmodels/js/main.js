@@ -23,7 +23,6 @@ $(document).ready(function(){
                 $('#book_cta').removeClass('fixbg');
             }
         }
-
 	});
 
 	// Burger Menu
@@ -39,8 +38,11 @@ $(document).ready(function(){
 		$("body").removeClass("no-scroll"); // re-enable scrolling
 	});
 
+
+	$('.wp-block-gallery-1').addClass('models_carousel owl-carousel banner');
+	
     //Carousel
-	$(".owl-carousel").owlCarousel({
+	$(".owl-carousel.multiple").owlCarousel({
 		loop: true,
 		nav: true,
 		dots: true,
@@ -62,6 +64,20 @@ $(document).ready(function(){
 		  },
 		},
 	});
+	$(".owl-carousel.banner").owlCarousel({
+		loop: true,
+		nav: true,
+		dots: true,
+		items: 1,               // always show 1 item
+		responsiveRefreshRate: 0,
+		responsive: {           // optional, can also remove entirely
+			0: { items: 1 },
+			601: { items: 1 },
+			1001: { items: 1 },
+			1301: { items: 1 }
+		}
+	});
+
 
 	function swap_this(){
 		if(window_width <= 600){
@@ -87,8 +103,4 @@ $(document).ready(function(){
 	});
 
 	new WOW().init();
-
-	
-
-
 });

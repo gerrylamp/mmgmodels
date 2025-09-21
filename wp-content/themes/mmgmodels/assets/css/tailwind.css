@@ -25,6 +25,10 @@
 }
 
 
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+}
+
 /* ---------------------------------------- 
  *
  * Utility classes
@@ -45,11 +49,44 @@
 .flex-wrap {
     flex-wrap: wrap;
 }
+.gap-2{
+    gap: 2rem;
+}
 .gap-4{
     gap: 4rem;
 }
+.grid {
+    display: grid;
+}
+.grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+.col-span-1 {
+    grid-column: span 1 / span 1;
+}
+.col-span-2 {
+    grid-column: span 2 / span 2;
+}
+.h-fit {
+    height: fit-content;
+}
+.h-70dvh {
+    height: 70dvh;
+}
 .justify-between {
     justify-content: space-between;
+}
+.justify-normal {
+    justify-content: normal !important;
 }
 .leading-normal {
     line-height: 1.5;
@@ -58,8 +95,32 @@
     list-style-type: none;
     padding: 0;
 }
+.mt-6{
+    margin-top: 6rem;
+}
+.mt-10{
+    margin-top: 10rem;
+}
 .mb-2 {
     margin-bottom: 2rem;
+}
+.mb-4 {
+    margin-bottom: 4rem;
+}
+.mb-6 {
+    margin-bottom: 6rem;
+}
+.my-1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.my-2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.my-3 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 .min-w-200 {
     min-width: 200px;
@@ -68,17 +129,44 @@
     margin-left: auto;
     margin-right: auto;
 }
+.object-cover {
+    object-fit: cover;
+}
+.opacity-50 {
+    opacity: 0.50;
+}
+.p-2{
+    padding: 2rem;
+}
 .py-1 {
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+.py-4 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 .py-6 {
     padding-top: 6rem;
     padding-bottom: 6rem;
 }
+.py-8 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
 .px-1 {
     padding-left: 1rem;
     padding-right: 1rem;
+}
+.px-4 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.pt-1{
+    padding-top: 1rem;
+}
+.pt-10 {
+    padding-top: 10rem;
 }
 .text-center {
     text-align: center;
@@ -88,6 +176,9 @@
 }
 .text-sm {
     font-size: 14px;
+}
+.text-24 {
+    font-size: 24px;
 }
 .uppercase {
     text-transform: uppercase;
@@ -156,19 +247,23 @@ blockquote {
 .single-model .model-name{
     font-size: 50px;
 }
-.single-model .model-parameters {
-    margin: 0;
+.single-model .model-parameters,
+.archive-models .model-parameters {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    background: linear-gradient(to right, rgba(253, 97, 227, 1) 0%, rgba(255, 79, 215, 0.9) 50%, rgba(255, 119, 184, 0.8) 100%);
 }
-.single-model .model-parameters li {
+/* .single-model .model-parameters {
+    margin: 0;
+    background: linear-gradient(to right, rgba(253, 97, 227, 1) 0%, rgba(255, 79, 215, 0.9) 50%, rgba(255, 119, 184, 0.8) 100%);
+} */
+.single-model .model-parameters li,
+.archive-models .model-parameters li {
     display: flex;
     flex-direction: column;
 }
-.single-model .models-social-icons,
-.single-model .model-parameters,
+/* .single-model .models-social-icons, */
+/* .single-model .model-parameters, */
 .single-model .model-contact-info {
     padding: 2rem 4rem;
 }
@@ -227,9 +322,10 @@ blockquote {
 }
 .single-model input#wpforms-96-field_1,
 .single-model input#wpforms-96-field_2,
-.single-model textarea#wpforms-96-field_3{
+.single-model textarea#wpforms-96-field_3,
+.single-model input#wpforms-96-field_4{
     border: 1px solid rgba(255, 255, 255, .2);
-    background: none;
+    background: #1A1A1A;
     color: #fff;
 }
 .single-model .wpforms-field-label {
@@ -298,17 +394,20 @@ footer .custom-logo-link img {
     }
 } */
 @media (min-width: 768px) {
-    .container {
+    .container,
+    .wp-block-gallery-2 {
         max-width: 840px;
     }
 }
 @media (min-width: 992px) {
-    .container {
+    .container,
+    .wp-block-gallery-2 {
         max-width: 1000px;
     }
 }
 @media (min-width: 1300px) {
-    .container {
+    .container,
+    .wp-block-gallery-2 {
         max-width: 1200px;
     }
 }

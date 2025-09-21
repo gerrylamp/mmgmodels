@@ -31,213 +31,67 @@
 			</div>
 
 			<div class="models_carousel owl-carousel">
-				<div class="model_card">
-					<figure><img src="<?php echo get_template_directory_uri(); ?>/images/model1.jpg" alt=""></figure>
-					<div class="model_card_info">
-						<h2>Dummy <span>Name</span></h2>
-						<ul>
-							<li>
-								<strong>Height</strong>
-								<span>190</span>
-							</li>
-							<li>
-								<strong>Bust</strong>
-								<span>89</span>
-							</li>
-							<li>
-								<strong>Waist</strong>
-								<span>60</span>
-							</li>
-							<li>
-								<strong>Hips</strong>
-								<span>92</span>
-							</li>
-							<li>
-								<strong>Shoes</strong>
-								<span>37</span>
-							</li>
-							<li>
-								<strong>Eyes</strong>
-								<span>Blue</span>
-							</li>
-							<li>
-								<strong>Hair</strong>
-								<span>Brown</span>
-							</li>
-							<li>
-								<strong>Size</strong>
-								<span>8</span>
-							</li>
-						</ul>
-					</div>
-					<a href=""></a>
-				</div>
-				<div class="model_card">
-					<figure class="model_card_img"><img src="<?php echo get_template_directory_uri(); ?>/images/model2.jpg" alt=""></figure>
-					<div class="model_card_info">
-						<h2>Dummy <span>Name</span></h2>
-						<ul>
-							<li>
-								<strong>Height</strong>
-								<span>190</span>
-							</li>
-							<li>
-								<strong>Bust</strong>
-								<span>89</span>
-							</li>
-							<li>
-								<strong>Waist</strong>
-								<span>60</span>
-							</li>
-							<li>
-								<strong>Hips</strong>
-								<span>92</span>
-							</li>
-							<li>
-								<strong>Shoes</strong>
-								<span>37</span>
-							</li>
-							<li>
-								<strong>Eyes</strong>
-								<span>Blue</span>
-							</li>
-							<li>
-								<strong>Hair</strong>
-								<span>Brown</span>
-							</li>
-							<li>
-								<strong>Size</strong>
-								<span>8</span>
-							</li>
-						</ul>
-					</div>
-					<a href=""></a>
-				</div>
-				<div class="model_card">
-					<figure><img src="<?php echo get_template_directory_uri(); ?>/images/model3.jpg" alt=""></figure>
-					<div class="model_card_info">
-						<h2>Dummy <span>Name</span></h2>
-						<ul>
-							<li>
-								<strong>Height</strong>
-								<span>190</span>
-							</li>
-							<li>
-								<strong>Bust</strong>
-								<span>89</span>
-							</li>
-							<li>
-								<strong>Waist</strong>
-								<span>60</span>
-							</li>
-							<li>
-								<strong>Hips</strong>
-								<span>92</span>
-							</li>
-							<li>
-								<strong>Shoes</strong>
-								<span>37</span>
-							</li>
-							<li>
-								<strong>Eyes</strong>
-								<span>Blue</span>
-							</li>
-							<li>
-								<strong>Hair</strong>
-								<span>Brown</span>
-							</li>
-							<li>
-								<strong>Size</strong>
-								<span>8</span>
-							</li>
-						</ul>
-					</div>
-					<a href=""></a>
-				</div>
-				<div class="model_card">
-					<figure><img src="<?php echo get_template_directory_uri(); ?>/images/model4.jpg" alt=""></figure>
-					<div class="model_card_info">
-						<h2>Dummy <span>Name</span></h2>
-						<ul>
-							<li>
-								<strong>Height</strong>
-								<span>190</span>
-							</li>
-							<li>
-								<strong>Bust</strong>
-								<span>89</span>
-							</li>
-							<li>
-								<strong>Waist</strong>
-								<span>60</span>
-							</li>
-							<li>
-								<strong>Hips</strong>
-								<span>92</span>
-							</li>
-							<li>
-								<strong>Shoes</strong>
-								<span>37</span>
-							</li>
-							<li>
-								<strong>Eyes</strong>
-								<span>Blue</span>
-							</li>
-							<li>
-								<strong>Hair</strong>
-								<span>Brown</span>
-							</li>
-							<li>
-								<strong>Size</strong>
-								<span>8</span>
-							</li>
-						</ul>
-					</div>
-					<a href=""></a>
-				</div>
-				<div class="model_card">
-					<figure><img src="<?php echo get_template_directory_uri(); ?>/images/model5.jpg" alt=""></figure>
-					<div class="model_card_info">
-						<h2>Dummy <span>Name</span></h2>
-						<ul>
-							<li>
-								<strong>Height</strong>
-								<span>190</span>
-							</li>
-							<li>
-								<strong>Bust</strong>
-								<span>89</span>
-							</li>
-							<li>
-								<strong>Waist</strong>
-								<span>60</span>
-							</li>
-							<li>
-								<strong>Hips</strong>
-								<span>92</span>
-							</li>
-							<li>
-								<strong>Shoes</strong>
-								<span>37</span>
-							</li>
-							<li>
-								<strong>Eyes</strong>
-								<span>Blue</span>
-							</li>
-							<li>
-								<strong>Hair</strong>
-								<span>Brown</span>
-							</li>
-							<li>
-								<strong>Size</strong>
-								<span>8</span>
-							</li>
-						</ul>
-					</div>
-					<a href=""></a>
+				<div class="grid grid-cols-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+					<?php
+					$args = array(
+						'post_type'      => 'model',
+						'posts_per_page' => 5,
+						'orderby'        => 'date',
+						'order'          => 'DESC',
+					);
+					$models = new WP_Query( $args );
+
+					if ( $models->have_posts() ) :
+						while ( $models->have_posts() ) : $models->the_post();
+							$parameters = get_field('parameters');
+
+							echo "<a href='" . get_permalink() . "' class='model_card bg-black p-4 rounded-lg shadow-lg'>";
+								if ( has_post_thumbnail() ) {
+									echo "<div class='model-image'>";
+										the_post_thumbnail( 'large', ['class' => 'w-full h-70dvh object-cover'] );
+									echo "</div>";
+								}
+
+								echo "<div class='model_card_info'>";
+									echo "<h2 class='model-name text-xl text-white mb-2 uppercase'>" . get_the_title() . "</h2>";
+
+									if ($parameters) {
+										$fields = [
+											'height' => 'Height',
+											'bust'   => 'Bust',
+											'waist'  => 'Waist',
+											'hips'   => 'Hips',
+											'shoe'   => 'Shoe',
+											'eyes'   => 'Eyes',
+										];
+
+										echo "<ul class='model-parameters mb-2'>";
+											foreach ( $fields as $key => $label ) :
+												if ( !empty( $parameters[$key] ) ) : ?>
+													<li>
+														<strong class="parameter-title text-white"><?php echo $label; ?></strong>
+														<span class="parameter-value color-darkgrey"><?php echo esc_html( $parameters[$key] ); ?></span>
+													</li>
+												<?php endif;
+											endforeach;
+										echo "</ul>";
+									}
+								echo "</div>";
+							echo "</a>";
+						endwhile;
+						wp_reset_postdata();
+					else :
+						echo '<p>No models found.</p>';
+					endif;
+					?>
 				</div>
 			</div>
 
+			<!-- <div class="text-center mt-6">
+				<a href="<?php echo site_url('/models'); ?>" class="btn bg-blue-600 text-white px-4 py-2 rounded-lg">
+					View All Models
+				</a>
+			</div> -->
 		</div>
 	</div>
 </section>

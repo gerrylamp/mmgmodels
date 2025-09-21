@@ -1,4 +1,4 @@
-		<footer class="text-white py-6 px-1 main-font">
+		<footer class="text-white py-6 px-1 main-font bg-black">
 			<div class="container mx-auto px-24">
 				<div class="flex flex-wrap justify-between gap-4">
 					<div class="site-footer-logo flex-1">
@@ -42,14 +42,12 @@
 		<section class="text-center py-1 uppercase">
 			<p>Copyright &copy;MMG Models. All rights reserved. <a href="mailto: info@mmgmodels.com" class="underline">info@mmgmodels.com</a></p>
 		</section>
-
-
-			
+		
 		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/wow.min.js"></script>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/owl.carousel.min.js"></script>
-
+		
 		<?php wp_footer(); ?>
 	</body>
 </html>
