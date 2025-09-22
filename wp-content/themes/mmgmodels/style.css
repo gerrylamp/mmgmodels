@@ -27,7 +27,11 @@
 .headingStyle1{font-size: var(--largeFont);  line-height: 100%;}
 .subHead1{display: block; font-family: var(--secFont); font-size: var(--smallFont); font-weight: 400; color: var(--priColor); line-height: 100%; margin-bottom: 5px;}
 
-.btnStyle1{display: block; width: 150px; max-width: 100%; height: 50px; line-height: 50px; background: var(--priColor); font-family: var(--priFont); font-size: var(--bodyFontSize); font-weight: var(--bodyFontWeight); color: #fff; text-align: center; padding: 0 30px; position: relative;}
+.btnStyle1{display: block; max-width: 100%; line-height: 50px; background: var(--priColor); font-family: var(--priFont); font-size: var(--bodyFontSize); font-weight: var(--bodyFontWeight); color: #fff; text-align: center; padding: 0 30px; position: relative;}
+#main_area .btnStyle1,
+.banner .btnStyle1 {
+	width: 150px;
+}
 .btnStyle1:hover{background: var(--darkColor); box-shadow: 0 0 0 1px #fff;}
 
 /* Heading and Button Styles End */
@@ -176,8 +180,14 @@ body.no-scroll { overflow: hidden; }
 .home_main a{margin-top: 20px;}
 
 /* Book Now CTA */
-#book_cta{background: linear-gradient(rgba(26, 26, 26, 0.8),rgba(26, 26, 26, 0.8)), url(images/book-cta-bg.jpg) no-repeat center -220px/cover;}
-.book_cta_con{padding: 200px 0;}
+/* #book_cta{background: linear-gradient(rgba(26, 26, 26, 0.8),rgba(26, 26, 26, 0.8)), url(images/book-cta-bg.jpg) no-repeat center -220px/cover;} */
+#book_cta { 
+    background: linear-gradient(rgba(26, 26, 26, 0.8),rgba(26, 26, 26, 0.8)), url(images/book-cta-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+.book_cta_con{padding: 10vw 0;}
 .book_cta_info{text-align: center;}
 .book_cta_btn{display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 30px;}
 .book_cta_btn a{width: 200px;}

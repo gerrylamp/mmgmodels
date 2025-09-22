@@ -49,6 +49,8 @@ $(document).ready(function(){
 		responsiveRefreshRate: 0,
 		autoplay: true,
 		autoplayHoverPause: true,
+		navContainer: '.owl-controls-wrapper .owl-nav',
+    	dotsContainer: '.owl-controls-wrapper .owl-dots',
 		responsive: {
 		  0: {
 			items: 1,

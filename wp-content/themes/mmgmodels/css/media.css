@@ -18,7 +18,7 @@ and (max-width : 1024px) {
 
 @media (max-width: 1000px) {
 
-    .section_con { padding: 60px 25px; }
+    .section_con { padding: 20px 25px; }
 
     /* Header */
     #header{padding: 25px;}
@@ -46,7 +46,14 @@ and (max-width : 1024px) {
 
     /* Main Area */
     #main_area{position: relative; isolation: isolate; background-position-x: 0%;}
-    #main_area::before{content: ""; background: rgba(0, 0, 0, 0.7); position: absolute; inset: 0; z-index: -1;}
+    #main_area::before,
+    #about-us .banner::before {
+      content: ""; 
+      background: rgba(0, 0, 0, 0.7); 
+      position: absolute; 
+      inset: 0; 
+      z-index: -1;
+    }
     .main_con { padding: 0; }
     .home_main { width: 100%; margin: 0 auto; text-align: center; } 
     .home_main a { margin: 20px auto 0; }
@@ -70,6 +77,13 @@ and (max-width : 600px) {
   #wpadminbar { position: fixed !important; }
 
   .book_cta_btn { flex-wrap: wrap; }
-
+  .model_categories {
+    margin: 40px 0 20px;
+  }
+  .model_categories .btnStyle1 { 
+    font-size: 12px;
+    line-height: 30px;
+    padding: 0 10px;
+  }
 }
 

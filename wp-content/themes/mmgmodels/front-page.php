@@ -30,8 +30,9 @@
 				<button class="btnStyle1">Top Model</button>
 			</div>
 
-			<div class="models_carousel owl-carousel">
-				<div class="grid grid-cols-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+			<div class="models_carousel owl-carousel multiple">
+				<!-- <div class="grid grid-cols-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"> -->
+				<!-- <div class="model_card"> -->
 					<?php
 					$args = array(
 						'post_type'      => 'model',
