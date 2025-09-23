@@ -11,6 +11,16 @@ and (max-width : 1500px) {
 }
 
 @media only screen
+and (max-width : 1200px) {
+  /* #book_cta { 
+    background: linear-gradient(rgba(26, 26, 26, 0.8),rgba(26, 26, 26, 0.8)), url(images/book-cta-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  } */
+}
+
+@media only screen
 and (max-width : 1024px) {
   
     .wow{animation: none !important;}
@@ -18,7 +28,7 @@ and (max-width : 1024px) {
 
 @media (max-width: 1000px) {
 
-    .section_con { padding: 20px 25px; }
+    .section_con { padding: 60px 25px; }
 
     /* Header */
     #header{padding: 25px;}
@@ -57,7 +67,9 @@ and (max-width : 1024px) {
     .main_con { padding: 0; }
     .home_main { width: 100%; margin: 0 auto; text-align: center; } 
     .home_main a { margin: 20px auto 0; }
-
+    section.section_con.nh_breadcrumbs {
+      padding: 20px 25px;
+    }
 }
 
 @media only screen
@@ -80,10 +92,15 @@ and (max-width : 600px) {
   .model_categories {
     margin: 40px 0 20px;
   }
-  .model_categories .btnStyle1 { 
-    font-size: 12px;
+  .btnStyle1 {
+    font-size: 14px;
     line-height: 30px;
     padding: 0 10px;
+    width: fit-content !important;
+    border-radius: 2px;
+  }
+  .model_categories .btnStyle1 {
+    font-size: 12px;
   }
 }
 

@@ -1,6 +1,9 @@
 <?php get_header(); ?>
 
 <style>
+    h2 {
+        font-weight: bold;
+    }
     .single-model .models_carousel {
         margin-top: 0;
     }
@@ -25,7 +28,6 @@
     .single-model .btnStyle1 {
         font-size: 14px;
     }
-    .archive-models .models_carousel .owl-nav,
     .single-model .models_carousel .owl-nav {
         position: absolute;
         top: 10%;
@@ -36,14 +38,60 @@
     .single-model .owl-carousel .owl-stage-outer {
         z-index: 1;
     }
-    .archive-models .owl-carousel .owl-dots,
-    .single-model .owl-carousel .owl-dots {
-        display: none;
-    }
+    
     .archive-models .banner .model-name,
     .single-model .banner .model-name {
         font-size: 75px;
         line-height: 1;
+    }
+    @media screen and (max-width: 1280px) {
+        #all-models {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        /* .models_carousel .owl-nav {
+            padding: 0;
+        } */
+        .model_card_info {
+            padding: 20px 10px;
+        }
+        .archive-models .banner .model_card_info {
+            width: 100%;
+        }
+        .archive-models .banner .model-name,
+        .single-model .banner .model-name {
+            font-size: 40px;
+        }
+        .model_card_info h2 {
+            font-size: 18px;
+        }
+        .archive-models #all-models .model-parameters {
+            gap: 1rem;
+            flex-direction: column;
+            margin-bottom: 0;
+        }
+        .archive-models .model-parameters li {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .models-grid.grid {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    @media screen and (min-width: 600px) {
+        .archive-models .owl-carousel .owl-dots,
+        .single-model .owl-carousel .owl-dots {
+            display: none;
+        }
+        .archive-models .models_carousel .owl-nav{
+            position: absolute;
+            top: 10%;
+            width: 100%;
+            margin: 0;
+        }
     }
 </style>
 
@@ -59,8 +107,16 @@
 <section class="archive-models bg-main text-main px-1">
     <div class="models-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 models_carousel owl-carousel banner px-4 pt-1">
         <?php
-            if ( have_posts() ) :
-                while ( have_posts() ) : the_post();
+            $args = array(
+                'post_type'      => 'model',
+                'posts_per_page' => 4,
+                'orderby'        => 'date',
+                'order'          => 'DESC',
+            );
+            $models = new WP_Query( $args );
+
+            if ( $models->have_posts() ) :
+                    while ( $models->have_posts() ) : $models->the_post();
                     $parameters = get_field('parameters');
 
                     echo "<div class='model-card bg-black p-4 rounded-lg shadow-lg'>";
@@ -105,7 +161,7 @@
         ?>
     </div>
 
-    <div class="models-grid grid grid-cols-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-6 px-4">
+    <div id="all-models" class="models-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6 py-6 px-4">
         <?php
             if ( have_posts() ) :
                 while ( have_posts() ) : the_post();

@@ -5,7 +5,7 @@
         position: static !important;
     }
     .about_us_con h2 {
-        font-size: 2vw;
+        font-size: 30px;
         font-weight: bold;
         margin-bottom: 6rem;
     }
@@ -18,7 +18,7 @@
         width: 65vw;
     }
     .banner {
-        height: 70dvh;
+        height: 60dvh;
     }
     .main_con {
         padding: 0;
@@ -36,6 +36,10 @@
     @media screen and (max-width: 1400px) {
         .main_con {
             transform: translate(30%, -50%);
+        }
+        h1.model-name,
+        .about_us_con h2 {
+            margin-bottom: 4rem;
         }
     }
     @media screen and (max-width: 1200px) {
@@ -56,6 +60,27 @@
         }
         .home_main {
             width: 100%;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .about_us_con h2 {
+            margin-bottom: 2rem;
+        }
+        #main-content.wrapper {
+            width: 100%;
+            padding: 4rem 1rem;
+        }
+        .about_us_con figure img {
+            height: 20rem;
+        }
+        h1 {
+            margin-bottom: 2rem !important;
+        }
+        .about_us_con h2 {
+            font-size: 24px;
+        }
+        .banner {
+            height: 70dvh;
         }
     }
 </style>

@@ -1,6 +1,7 @@
 		<footer class="text-white py-6 px-1 main-font bg-black">
 			<div class="container mx-auto px-24">
-				<div class="flex flex-wrap justify-between gap-4">
+				<!-- <div class="flex flex-wrap justify-between gap-4"> -->
+				<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
 					<div class="site-footer-logo flex-1">
 						<div class="bg-white mb-2 min-w-200">
 							<?php 
@@ -9,7 +10,7 @@
 								}
 							?>
 						</div>
-						<p class="text-sm" style="color: #999999">MMG Models was founded in Dubai in 2008. Since then, it has become the fastest growing, most respected modeling agency not only in the UAE, but also across the entire Gulf region. MMG Models is operated and managed by a team of professionals that have lived and breathed the industry and therefore are able to use their experience to offer a personal touch and a high level of quality to service the most discerning clients.</p>
+						<p class="text-sm" style="color: #999999">MMG Models was founded in Dubai in 2008. Since then, it has become the fastest growing, most respected modeling agency not only in the UAE, but also across the entire Gulf region.</p>
 					</div>
 					<div class="flex-1">
 						<h2>Navigation</h2>

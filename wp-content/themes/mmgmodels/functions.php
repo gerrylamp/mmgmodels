@@ -11,6 +11,7 @@ function mmgmodels_theme_setup() {
     register_nav_menus([
         'primary' => __('Primary Menu', 'mytheme')
     ]);
+    register_nav_menu('secondaryMenu', 'Secondary Menu');
     register_nav_menu('footerMenuLocationOne', 'Footer Menu Location One');
     register_nav_menu('footerMenuLocationTwo', 'Footer Menu Location Two');
 }
@@ -22,7 +23,7 @@ function mmdmodels_theme_scripts() {
     // wp_enqueue_style('tailwindcss', get_theme_file_uri('/assets/css/tailwind_output.css'));
     wp_enqueue_style('tailwindcss', get_theme_file_uri('/assets/css/tailwind.css'));
     wp_enqueue_script('mytheme-scripts', get_template_directory_uri() . '/assets/js/main.js', [], null, true);
-
+    
     wp_enqueue_style('fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
     wp_enqueue_style( 'lightgallery', 'https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css' );
     wp_enqueue_script( 'lightgallery', 'https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/lightgallery.min.js', [], null, true );

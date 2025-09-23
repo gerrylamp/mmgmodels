@@ -50,9 +50,15 @@
 				</nav>
 
 				<div class="social_icons">
-					<figure><a href="https://www.facebook.com/"></a><img src="<?php echo get_template_directory_uri(); ?>/images/icons/fb-icon.webp" alt="facebook"></figure>
+					<!-- <figure><a href="https://www.facebook.com/"></a><img src="<?php echo get_template_directory_uri(); ?>/images/icons/fb-icon.webp" alt="facebook"></figure>
 					<figure><a href="https://www.x.com/"></a><img src="<?php echo get_template_directory_uri(); ?>/images/icons/twitter-icon.webp" alt="twitter"></figure>
-					<figure><a href="https://www.instagram.com/"></a><img src="<?php echo get_template_directory_uri(); ?>/images/icons/insta-icon.webp" alt="instagram"></figure>
+					<figure><a href="https://www.instagram.com/"></a><img src="<?php echo get_template_directory_uri(); ?>/images/icons/insta-icon.webp" alt="instagram"></figure> -->
+					<?php
+						wp_nav_menu(array(
+							'container_class' => 'nav-menu',
+							'theme_location' => 'secondaryMenu'
+						))
+					?>
 				</div>
 			</div>
 		</div>

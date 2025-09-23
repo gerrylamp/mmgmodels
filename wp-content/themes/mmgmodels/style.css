@@ -3,8 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
 
 :root { 
-	--priColor: #e0006c; 
-	--secColor: #fd61e3;
+	--priColor: linear-gradient(rgba(224, 0, 108, 0.85), rgba(26, 26, 26, 0.9)); 
+	/* --secColor: #fd61e3; */
+	--secColor: linear-gradient(135deg, #e0006c 0%, #80003a 100%);
 	--darkColor: #1a1a1a;
 	--darkColor2: #0d0d0d;
 
@@ -27,7 +28,7 @@
 .headingStyle1{font-size: var(--largeFont);  line-height: 100%;}
 .subHead1{display: block; font-family: var(--secFont); font-size: var(--smallFont); font-weight: 400; color: var(--priColor); line-height: 100%; margin-bottom: 5px;}
 
-.btnStyle1{display: block; max-width: 100%; line-height: 50px; background: var(--priColor); font-family: var(--priFont); font-size: var(--bodyFontSize); font-weight: var(--bodyFontWeight); color: #fff; text-align: center; padding: 0 30px; position: relative;}
+.btnStyle1{display: block; max-width: 100%; line-height: 50px; background: var(--priColor); font-family: var(--priFont); font-size: var(--bodyFontSize); font-weight: var(--bodyFontWeight); color: #fff; text-align: center; padding: 0 30px; position: relative; border-radius: 5px;}
 #main_area .btnStyle1,
 .banner .btnStyle1 {
 	width: 150px;
@@ -96,7 +97,10 @@ video, iframe{display: block;}
 
 /* Nav Area */
 .main_nav{}
-.main_nav ul{display: flex; justify-content: center; align-items: center; gap: 40px;}
+.main_nav ul, ul#menu-secondary-menu{display: flex; justify-content: center; align-items: center; gap: 40px;}
+ul#menu-secondary-menu {
+	gap: 1rem;
+}
 .main_nav ul li{position: relative;}
 .main_nav ul li a{display: block; line-height: 40px; text-align: center; text-transform: uppercase;}
 .main_nav ul li a:hover{text-decoration: underline;}
@@ -150,7 +154,8 @@ body.no-scroll { overflow: hidden; }
 .models_carousel{display: flex; justify-content: center;}
 .model_card{position: relative;}
 .model_card_img{}
-.model_card_info{position: absolute; inset: auto 0 0 0; background: linear-gradient(90deg, rgba(224, 0, 108, 0.9),rgba(224, 0, 108, 0.6)); -webkit-transform: scaleY(0); transform: scaleY(0); -webkit-transform-origin: bottom; transform-origin: bottom; transition: -webkit-transform .4s ease; transition: transform .4s ease; transition: transform .4s ease, -webkit-transform .4s ease; padding: 40px 30px; z-index: 2; text-align: center;}
+/* .model_card_info{position: absolute; inset: auto 0 0 0; background: linear-gradient(90deg, rgba(224, 0, 108, 0.9),rgba(224, 0, 108, 0.6)); -webkit-transform: scaleY(0); transform: scaleY(0); -webkit-transform-origin: bottom; transform-origin: bottom; transition: -webkit-transform .4s ease; transition: transform .4s ease; transition: transform .4s ease, -webkit-transform .4s ease; padding: 40px 30px; z-index: 2; text-align: center;} */
+.model_card_info{position: absolute; inset: auto 0 0 0; background: linear-gradient(rgba(224, 0, 108, 0.85), rgba(26, 26, 26, 0.9)); -webkit-transform: scaleY(0); transform: scaleY(0); -webkit-transform-origin: bottom; transform-origin: bottom; transition: -webkit-transform .4s ease; transition: transform .4s ease; transition: transform .4s ease, -webkit-transform .4s ease; padding: 40px 30px; z-index: 2; text-align: center;}
 .model_card:hover .model_card_info{transform: scaleY(1); -webkit-transform: scaleY(1);}
 .model_card_info h2{font-size: 30px; margin-bottom: 40px;}
 .model_card_info ul{display: flex; justify-content: center; flex-wrap: wrap; gap: 15px 40px;}

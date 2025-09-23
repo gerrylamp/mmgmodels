@@ -19,6 +19,13 @@
         height: 80dvh;
         /* opacity: 0.5; */
     }
+
+    @media screen and (max-width: 480px) {
+        .single-model .models-social-icons,
+        .single-model .model-parameters {
+            padding: 0;
+        }
+    }
 </style>
 
 <section class="section_con nh_breadcrumbs">
@@ -47,7 +54,7 @@
         ?>
     </div>
     <div class="container mx-auto">
-        <div class="grid grid-cols-3 gap-4">
+        <div class="flex flex-col sm:grid grid-cols-3 gap-4">
             <?php
                 echo "<div class='model-details flex-1 col-span-2 wow fadeInLeft'>";
                     if ( have_posts() ) :
@@ -159,10 +166,10 @@
 
 
 <!-- More talents section -->
-<section class="more-talents mt-12 container mx-auto mb-6">
+<section class="more-talents mt-12 container mx-auto mb-6 px-1">
     <h2 class="text-24 bold mb-2">More Talents</h2>
     
-    <div class=" grid grid-cols-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+    <div class="grid sm:grid-cols-4 gap-2">
         <?php
         $args = [
             'post_type'      => 'model',
