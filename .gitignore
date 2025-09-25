@@ -1,0 +1,62 @@
+# Ignore everything in the root except the "wp-content" directory.
+/*
+!wp-content/
+
+# Special submodule.
+!.gitmodules
+!securemanage/
+
+wp-content/*
+!wp-content/mu-plugins/
+!wp-content/plugins/
+!wp-content/themes/
+
+wp-content/plugins/*
+
+node_modules/
+
+# Ignore OS generated files.
+ehthumbs.db
+Thumbs.db
+
+# Ignore Editor files.
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+
+# Ignore log files and databases.
+*.log
+*.sql
+*.sqlite
+
+# Ignore packaged files.
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+!.gitignore
+!.github/
+!.editorconfig
+!.phpcs.xml.dist
+!README.md
+!CHANGELOG.md
+!composer.json
+
+# Track favicon files, if they exist.
+!android-chrome-*.png
+!apple-touch-icon*.png
+!browserconfig.xml
+!favicon*.png
+!favicon*.ico
+!manifest.json
+!mstile-*.png
+!safari-pinned-tab.svg
+!site.webmanifest
+
+# Ignore the WordPress default theme files.
+wp-content/themes/twenty*
