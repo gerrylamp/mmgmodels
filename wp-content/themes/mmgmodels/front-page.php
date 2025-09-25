@@ -3,7 +3,7 @@
 <section id="banner" class="section_con">
 	<figure class="bnr_vid">
 		<video width="320" height="240" autoplay muted loop>
-			<source src="<?php echo get_template_directory_uri(); ?>/videos/bnr-vid.mp4" type="video/mp4">
+			<source src="<?php echo get_template_directory_uri(); ?>/assets/videos/bnr-vid.mp4" type="video/mp4">
 			Your browser does not support the video tag.
 		</video> 
 	</figure>

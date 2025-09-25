@@ -1,0 +1,106 @@
+/* Large Tablet Devices */
+@media only screen
+and (max-width : 1600px) {
+  #main_area { background-position-x: 30%; }
+
+}
+
+@media only screen
+and (max-width : 1500px) {
+  
+}
+
+@media only screen
+and (max-width : 1200px) {
+  /* #book_cta { 
+    background: linear-gradient(rgba(26, 26, 26, 0.8),rgba(26, 26, 26, 0.8)), url(images/book-cta-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  } */
+}
+
+@media only screen
+and (max-width : 1024px) {
+  
+    .wow{animation: none !important;}
+}
+
+@media (max-width: 1000px) {
+
+    .section_con { padding: 60px 25px; }
+
+    /* Header */
+    #header{padding: 25px;}
+    #header.fixheader { position: absolute; }
+    .header_con { padding: 0;}
+    .social_icons { margin-top: 50px; }
+
+    /* Nav Area */
+    .main_nav { display: none; position: fixed; top: 0; right: 0; background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(20px); width: 100%; height: 100dvh; padding: 100px 25px 60px; flex-direction: column; z-index: 999; color: var(--darkColor); }
+    .main_nav ul { flex-direction: column; gap: 40px; }
+    .main_nav ul li a { min-width: 200px; }
+    .main_nav.active { display: block; }
+    .burger { display: flex; margin-left: auto; }
+    .close_btn{display: block;}
+
+    .main_nav ul ul { position: relative; inset: auto; transform: none; margin-top: 10px;}
+
+    .main_nav ul li.menu-item-has-children:before{content: "\25BC"; position: absolute; top: 5px; right: 20px; transition: ease-out .3s;}
+    .main_nav ul li.menu-item-has-children:hover:before{transform: rotate(-180deg); }
+
+    /* Banner */
+
+    /* Models */
+    .models_con { padding: 0; }
+
+    /* Main Area */
+    #main_area{position: relative; isolation: isolate; background-position-x: 0%;}
+    #main_area::before,
+    #about-us .banner::before {
+      content: ""; 
+      background: rgba(0, 0, 0, 0.7); 
+      position: absolute; 
+      inset: 0; 
+      z-index: -1;
+    }
+    .main_con { padding: 0; }
+    .home_main { width: 100%; margin: 0 auto; text-align: center; } 
+    .home_main a { margin: 20px auto 0; }
+    section.section_con.nh_breadcrumbs {
+      padding: 20px 25px;
+    }
+}
+
+@media only screen
+and (max-width : 800px) {
+  .model_card_info li { margin-top: 15px; }
+}
+
+@media only screen
+and (max-width : 600px) {
+	:root {
+    /* Heading size */
+    --smallFont: 30px;
+    --medFont: 35px;
+    --largeFont: 40px;
+  }
+
+  #wpadminbar { position: fixed !important; }
+
+  .book_cta_btn { flex-wrap: wrap; }
+  .model_categories {
+    margin: 40px 0 20px;
+  }
+  .btnStyle1 {
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 10px;
+    width: fit-content !important;
+    border-radius: 2px;
+  }
+  .model_categories .btnStyle1 {
+    font-size: 12px;
+  }
+}
+

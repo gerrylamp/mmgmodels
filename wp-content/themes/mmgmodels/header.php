@@ -5,9 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/media.css">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/animate.min.css">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/media.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/animate.min.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/owl.carousel.min.css">
 
     <?php if ( ! is_front_page() ) : ?>
         <style>
@@ -34,7 +34,7 @@
 			<div class="header_con">
 				<figure class="main_logo">
 					<a href="<?php echo get_home_url(); ?>"></a>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/mmg_logo_top_tm.png" alt="mmg models">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/mmg_logo_top_tm.png" alt="mmg models">
 				</figure>
 
 				<!-- Burger button -->
@@ -50,9 +50,9 @@
 				</nav>
 
 				<div class="social_icons">
-					<!-- <figure><a href="https://www.facebook.com/"></a><img src="<?php echo get_template_directory_uri(); ?>/images/icons/fb-icon.webp" alt="facebook"></figure>
-					<figure><a href="https://www.x.com/"></a><img src="<?php echo get_template_directory_uri(); ?>/images/icons/twitter-icon.webp" alt="twitter"></figure>
-					<figure><a href="https://www.instagram.com/"></a><img src="<?php echo get_template_directory_uri(); ?>/images/icons/insta-icon.webp" alt="instagram"></figure> -->
+					<!-- <figure><a href="https://www.facebook.com/"></a><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/fb-icon.webp" alt="facebook"></figure>
+					<figure><a href="https://www.x.com/"></a><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/twitter-icon.webp" alt="twitter"></figure>
+					<figure><a href="https://www.instagram.com/"></a><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/insta-icon.webp" alt="instagram"></figure> -->
 					<?php
 						wp_nav_menu(array(
 							'container_class' => 'nav-menu',

@@ -33,7 +33,7 @@
 						</nav>
 					</div>
 					<div class="flex-1">
-						<img class="w-full" src="<?php echo get_theme_file_uri() ?>/assets/img/contact.jpg" alt="contact">
+						<img class="w-full" src="<?php echo get_theme_file_uri() ?>/assets/images/contact.jpg" alt="contact">
 					</div>
 				</div>
 			</div>
@@ -45,9 +45,9 @@
 		</section>
 		
 		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-		<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
-		<script src="<?php echo get_template_directory_uri(); ?>/js/wow.min.js"></script>
-		<script src="<?php echo get_template_directory_uri(); ?>/js/owl.carousel.min.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/assets/js/main.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/assets/js/wow.min.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/assets/js/owl.carousel.min.js"></script>
 		
 		<?php wp_footer(); ?>
 	</body>

@@ -9,10 +9,10 @@
     <?php }?>
 </section>
 
-<section id="contact-us" class="wrapper py-4">
-    <h1 class="text-center headingStyle1 mb-4 wow fadeInUp">Contact</h1>
+<section id="contact-us" class="wrapper py-4 px-1">
+    <h1 class="text-center headingStyle1 mb-4 wow fadeInUp bold">Contact</h1>
 
-    <div class="grid grid-cols-3 gap-4">
+    <div class="flex flex-col sm:grid grid-cols-3 gap-4">
         <div class="col-span-2">
             <div class="col-sm-8 text-left pt-5 wow fadeInLeft">
             
@@ -28,7 +28,7 @@
         </div>
 
         <div class="col-span-1">
-            <img class="w-full wow fadeInRight" src="<?php echo get_theme_file_uri() ?>/assets/img/contact.jpg" alt="contact">
+            <img class="w-full wow fadeInRight" src="<?php echo get_theme_file_uri() ?>/assets/images/contact.jpg" alt="contact">
         </div>
     </div>
 </section>
